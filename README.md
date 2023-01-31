@@ -1,7 +1,12 @@
 <p align="center">
 <img src="https://cdn.icon-icons.com/icons2/2790/PNG/512/css_filetype_icon_177544.png" alt="css"  height= "150px">
-<h1 align="center">Практические упражнения CSS</h1>
-</p>
+
+<h1 align="center">
+
+[Практические упражнения CSS](https://code.mu/ru/markup/book/prime/)
+
+</h1>
+
 
 ### Темы:
 <p>➖ Селекторы (34-50)</p>
