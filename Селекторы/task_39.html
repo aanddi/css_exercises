@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Группировка сложных селекторов</title>
+
+   <style>
+      body {
+         margin: 20px 150px;
+      }
+
+      /*_____________№1_____________*/
+      #block h1,
+      #block h2 {
+         text-align: center;
+         color: #0969a8;
+      }
+
+      /*_____________№2_____________*/
+      #block2 h1,
+      #block2 h2 {
+         text-align: center;
+         color: #09a809;
+      }
+
+      #block2 h1 {
+         font-size: 30px;
+      }
+
+      #block h2 {
+         font-size: 20px;
+      }
+
+      /*_____________№3_____________*/
+      #block3 h1,
+      #block3 h2,
+      #block3 h3 {
+         text-align: center;
+      }
+
+      #block3 h2 {
+         color: #0037ce;
+      }
+
+      #block3 h3 {
+         font-size: 16px;
+         color: #ce7c00;
+      }
+
+      /*_____________№4_____________*/
+      #block4 h1.eee,
+      #block4 h2.zzz {
+         text-align: center;
+         color: #99108e;
+      }
+
+      #block4 h1.eee {
+         font-size: 30px;
+      }
+
+      #block4 h2.zzz {
+         font-size: 20px;
+      }
+
+      /*_____________№5_____________*/
+      .xxx .kkk,
+      .hhh h2.ggg,
+      #block5 h2 {
+         text-align: center;
+         color: #0559c7;
+      }
+
+      /*_____________№6_____________*/
+      .ccc h2.ddd, .lll {
+         text-align: center;
+         color: #c70505;
+      }
+   </style>
+
+</head>
+
+<body>
+
+   <!-------------- №1 -----------------> <br><br>
+   <div id="block">
+      <h1>Заголовок 1</h1>
+      <h2>Заголовок 2</h2>
+   </div>
+
+   <!-------------- №2 -----------------> <br><br>
+   <div id="block2">
+      <h1>Заголовок 1</h1>
+      <h2>Заголовок 2</h2>
+   </div>
+
+   <!-------------- №3 -----------------> <br><br>
+   <div id="block3">
+      <h1>Заголовок 1</h1>
+      <h2>Заголовок 2</h2>
+      <h3>Заголовок 2</h3>
+   </div>
+
+   <!-------------- №4 -----------------> <br><br>
+   <div id="block4">
+      <h1 class="eee">Заголовок 1</h1>
+      <h2 class="zzz">Заголовок 2</h2>
+   </div>
+
+   <!-------------- №5 -----------------> <br><br>
+   <div class="xxx">
+      <h2 class="kkk">Заголовок 2</h2>
+   </div>
+   <div class="hhh">
+      <h2 class="ggg">Заголовок 2</h2>
+   </div>
+   <div id="block5">
+      <h2>Заголовок 2</h2>
+   </div>
+
+   <!-------------- №6 -----------------> <br><br>
+   <div class="ccc"><h2 class="ddd">Заголовок 2</h2></div>
+   <h2 class="lll">Заголовок 2</h2>
+
+</body>
+</html>
