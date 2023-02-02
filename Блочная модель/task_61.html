@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Работа с отступами margin на CSS</title>
+
+   <style>
+
+      body {
+         margin: 20px 150px;
+      }
+
+      /*_____________№1_____________*/
+      .box1 {
+         width: 400px;
+         height: 400px;
+         border: 2px dotted blue;
+      }
+
+      .box1-inside {
+         width: 300px;
+         height: 300px;
+         border: 1px solid orange;
+         margin: 50px;
+      }
+
+
+      /*_____________№2_____________*/
+      .box2 {
+         width: 400px;
+         height: 350px;
+         border: 1px dotted blue;
+      }
+
+      .box2-inside {
+         width: 350px;
+         height: 300px;
+         border: 1px dotted green;
+         margin: 20px;
+      }
+
+      .box3-inside {
+         width: 300px;
+         height: 250px;
+         border: 1px solid red;
+         margin: 25px;
+      }
+
+   </style>
+
+</head>
+
+<body>
+
+   <!-------------- №1 -----------------> <br><hr><br>
+   <div class="box1">
+      <div class="box1-inside"></div>
+   </div>
+
+
+   <!-------------- №2 -----------------> <br><hr><br>
+   <div class="box2">
+      <div class="box2-inside">
+         <div class="box3-inside"></div>
+      </div>
+   </div>
+
+</body>
+
+</html>
