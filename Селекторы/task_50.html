@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Селектор отрицания на CSS</title>
+
+   <style>
+
+      body {
+         margin: 20px 150px;
+      }
+
+      /*_____________№1_____________*/
+      .first li:not(.elem) {
+         color: #e61304;
+      }
+
+      /*_____________№2_____________*/
+      .second li:not(:first-child) {
+         color: #042de6;
+      }
+
+
+      /*_____________№3_____________*/
+      .third li:not(:first-child, :last-child) {
+         color: #2aaa03;
+      }
+   
+   </style>
+
+</head>
+
+<body>
+
+   <!-------------- №1 -----------------> <br><hr><br>
+   <ul class="first">
+      <li>1</li>
+      <li class="elem">2</li>
+      <li>3</li>
+      <li>4</li>
+      <li class="elem">5</li>
+      <li>6</li>
+      <li>7</li>
+      <li class="elem">8</li>
+      <li>9</li>
+   </ul>
+
+   <!-------------- №2 -----------------> <br><hr><br>
+   <ul class="second">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+   </ul>
+
+   <!-------------- №3 -----------------> <br><hr><br>
+   <ul class="third">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+   </ul>
+
+</body>
+
+</html>
