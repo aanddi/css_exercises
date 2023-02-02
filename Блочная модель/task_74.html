@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Выравнивание строчных элементов</title>
+
+   <style>
+      body {
+         margin: 20px 150px;
+      }
+
+      /*_____________№1_____________*/
+      .parent {
+         padding: 10px 0;
+	      border: 1px solid red;
+         text-align: center;
+      }
+
+      /*_____________№2_____________*/
+      .parent2 {
+         padding: 10px 0;
+	      border: 1px solid red;
+         text-align: right;
+      }
+
+      /*_____________№3_____________*/
+      .parent3 {
+         padding: 10px 0;
+	      border: 1px solid red;
+         text-align: right;
+         padding-right: 20px;
+      }
+
+   </style>
+
+</head>
+
+<body>
+
+   <!-------------- №1 -----------------> <br><hr><br>
+   <div class="parent">
+      <a href="#">ссылка 1</a>
+      <a href="#">ссылка 2</a>
+      <a href="#">ссылка 3</a>
+   </div>
+
+   <!-------------- №2 -----------------> <br><hr><br>
+   <div class="parent2">
+      <a href="">ссылка</a>
+   </div>
+
+   <!-------------- №3 -----------------> <br><hr><br>
+   <div class="parent3">
+      <a href="">ссылка</a>
+   </div>
+
+</body>
+
+</html>
