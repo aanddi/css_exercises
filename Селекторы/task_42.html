@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Соседний селектор в CSS</title>
+
+   <style>
+
+      body {
+         margin: 20px 150px;
+      }
+
+      /*_____________№1_____________*/
+      #elem1 + li {
+         color: #ca03d1;
+      }
+
+      /*_____________№2_____________*/
+      .elem2 + li {
+         color: #d13303;
+      }
+
+
+   </style>
+
+</head>
+
+<body>
+
+   <!-------------- №1 -----------------> <br><hr><br>
+   <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li id="elem1">5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+   </ul>
+
+   <!-------------- №2 -----------------> <br><hr><br>
+   <ul>
+      <li>1</li>
+      <li class="elem2">2</li>
+      <li>3</li>
+      <li>4</li>
+      <li class="elem2">5</li>
+      <li>6</li>
+      <li>7</li>
+      <li class="elem2">8</li>
+      <li>9</li>
+   </ul>
+
+</body>
+
+</html>
