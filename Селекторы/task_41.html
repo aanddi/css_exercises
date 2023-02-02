@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Приоритет селекторов CSS</title>
+
+   <style>
+      body {
+         margin: 20px 150px;
+      }
+
+      /*_____________№1_____________*/
+      h2 {
+         font-size: 20px;
+      }
+
+      h2 {
+         font-size: 30px;
+      }
+      /*  размер шрифта заголовка h2 будет 30px, т.к вторая запись переопределит первую  */
+
+      /*_____________№2_____________*/
+      h2 {
+         font-size: 20px;
+         color: blue;
+      }
+
+      h2 {
+         font-style: italic;
+         color: red;
+      }
+      /*  к заголовку h2 будет применятся такие свойства как: 
+      font-size: 20px; 
+      font-style: italic; 
+      color: red;   
+      */
+
+      /*_____________№3_____________*/
+   </style>
+
+</head>
+
+<body>
+
+   <!-------------- №1 -----------------> <br><br>
+   <h2>text</h2>
+
+   <!-------------- №2 -----------------> <br><br>
+   <h2>text</h2>
+
+   <!-------------- №3 -----------------> <br><br>
+
+
+</body>
+
+</html>
