@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Несколько значений в свойстве margin</title>
+
+   <style>
+
+      body {
+         margin: 20px 150px;
+      }
+
+      /*_____________№1_____________*/
+      .box1 {
+         width: 200px;
+         border: 1px solid orange;
+      }
+
+      .box1-inside {
+         height: 100px;
+         border: 1px dashed blue;
+         margin: 25px 55px 110px 12px;
+      }
+
+
+      /*_____________№2_____________*/
+      .box2 {
+         width: 200px;
+         border: 1px solid orange;
+      }
+
+      .box2-inside {
+         height: 60px;
+         border: 1px dashed blue;
+         margin: 100px 50px;
+      }
+
+
+      /*_____________№3_____________*/
+      .box3 {
+         width: 200px;
+         border: 1px solid orange;
+      }
+
+      .box3-inside {
+         height: 50px;
+         border: 1px dashed blue;
+         margin: 25px 50px ;
+      }
+
+      /*_____________№4_____________*/
+      .box4 {
+         width: 200px;
+         border: 1px solid orange;
+      }
+
+      .box4-inside {
+         height: 50px;
+         border: 1px dashed blue;
+         margin: 100px 50px 20px 50px;
+      }
+
+      /*_____________№5_____________*/
+      .box5 {
+         width: 400px;
+         border: 1px solid orange;
+      }
+
+      .box5-inside {
+         height: 50px;
+         border: 1px dashed blue;
+         margin: 30px 95px 100px 95px;
+      }
+
+   </style>
+
+</head>
+
+<body>
+
+   <!-------------- №1 -----------------> <br><hr><br>
+   <div class="box1">
+      <div class="box1-inside"></div>
+   </div>
+
+
+   <!-------------- №2 -----------------> <br><hr><br>
+   <div class="box2">
+      <div class="box2-inside"></div>
+   </div>
+
+   <!-------------- №3 -----------------> <br><hr><br>
+   <div class="box3">
+      <div class="box3-inside"></div>
+   </div>
+
+   <!-------------- №4 -----------------> <br><hr><br>
+   <div class="box4">
+      <div class="box4-inside"></div>
+   </div>
+
+   <!-------------- №5 -----------------> <br><hr><br>
+   <div class="box5">
+      <div class="box5-inside"></div>
+   </div>
+
+
+
+</body>
+
+</html>
