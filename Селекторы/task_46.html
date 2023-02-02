@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Состояния ссылок на CSS</title>
+
+   <style>
+
+      body {
+         margin: 20px 150px;
+      }
+
+      /*_____________№1_____________*/
+      a:link {
+         color: #2e78e7;
+      }
+
+      a:visited {
+         color: #0bd104;
+      }
+
+      a:hover {
+         color: #d13404;
+         text-decoration: none;
+      }
+
+      a:active {
+         color: #000000;
+      }
+
+      /*_____________№2_____________*/
+      a:link, a:visited, a:active  {
+         color: #085ee0;
+         text-decoration: none;
+      }
+
+      a:hover {
+         color: #d13404;
+         text-decoration: underline;
+         
+      }
+
+   </style>
+
+</head>
+
+<body>
+
+   <!-------------- №1 -----------------> <br><hr><br>
+   <a href="#">Link</a>
+   <a href="#">Link</a>
+   <a href="#">Link</a>
+   
+   <!-------------- №2 -----------------> <br><hr><br>
+   <a href="#">Link</a>
+   <a href="#">Link</a>
+   <a href="#">Link</a>
+
+</body>
+
+</html>
