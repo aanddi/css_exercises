@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Позиционирование относительно родителя на CSS</title>
+
+   <style>
+      * {
+         box-sizing: border-box;
+      }
+
+      body {
+         margin: 20px 150px;
+      }
+
+      /*_____________№1_____________*/
+      .wrapper1 {
+         position: relative;
+         border: 1px solid green;
+         width: 500px;
+         height: 500px;
+      }
+
+      .box1 {
+         position: absolute;
+         border: 1px solid red;
+         width: 100px;
+         height: 100px;
+         top: 100px;
+         left: 150px;
+      }
+
+      /*_____________№2_____________*/
+      .wrapper2 {
+         position: relative;
+         border: 1px solid green;
+         background-color: green;
+         width: 500px;
+         height: 500px;
+      }
+
+      .box {
+         position: absolute;
+         background-color: #fff;
+         width: 100px;
+         height: 100px;
+      }
+
+      .box2 {
+         top: 40px;
+         left: 40px;
+      }
+
+      .box3 {
+         top: 360px;
+         left: 340px;
+      }
+
+      /*_____________№3_____________*/
+      .wrapper3 {
+         position: relative;
+         border: 1px solid black;
+         width: 200px;
+         height: 350px;
+      }
+
+      .box4 {
+         border: 1px solid black;
+         border-radius: 100%;
+         width: 100px;
+         height: 100px;
+         background-color: red;
+         position: absolute;
+         top: 10px;
+         left: 50px;
+      }
+
+      .box5 {
+         border: 1px solid black;
+         border-radius: 100%;
+         width: 100px;
+         height: 100px;
+         background-color: orange;
+         position: absolute;
+         top: 120px;
+         left: 50px;
+      }
+
+      .box6 {
+         border: 1px solid black;
+         border-radius: 100%;
+         width: 100px;
+         height: 100px;
+         background-color: green;
+         position: absolute;
+         top: 230px;
+         left: 50px;
+      }
+
+      /*_____________№4_____________*/
+      .wrapper4 {
+         position: relative;
+         border: 1px solid green;
+         background-color: green;
+         width: 500px;
+         height: 500px;
+         border-radius: 50%;
+      }
+
+      .box7 {
+         width: 100px;
+         height: 100px;
+         background-color: #fff;
+         position: absolute;
+         border-radius: 50%;
+         top: 110px;
+         left: 100px;
+      }
+
+      .box8 {
+         width: 100px;
+         height: 100px;
+         background-color: #fff;
+         position: absolute;
+         border-radius: 50%;
+         top: 110px;
+         left: 281px;
+      }
+
+      .box9 {
+         width: 60px;
+         height: 60px;
+         background-color: #fff;
+         position: absolute;
+         border-radius: 20px;
+         top: 228px;
+         left: 213px;
+      }
+
+      .box10 {
+         width: 230px;
+         height: 30px;
+         background-color: #fff;
+         position: absolute;
+         border-radius: 20px;
+         top: 338px;
+         left: 132px;
+      }
+
+      /*_____________№5_____________*/
+
+      .box11 {
+         width: 230px;
+         height: 30px;
+         background-color: #fff;
+         position: absolute;
+         border-radius: 64%;
+         top: 338px;
+         left: 132px;
+      }
+   </style>
+
+</head>
+
+<body>
+
+   <!-------------- №1 -----------------> <br><hr><br>
+   <div class="wrapper1">
+      <div class="box1"></div>
+   </div>
+
+   <!-------------- №2 -----------------> <br><hr><br>
+   <div class="wrapper2">
+      <div class="box box2"></div>
+      <div class="box box3"></div>
+   </div>
+
+   <!-------------- №3 -----------------> <br><hr><br>
+   <div class="wrapper3">
+      <div class="box4"></div>
+      <div class="box5"></div>
+      <div class="box6"></div>
+   </div>
+
+   <!-------------- №4 -----------------> <br><hr><br>
+   <div class="wrapper4">
+      <div class="box7"></div>
+      <div class="box8"></div>
+      <div class="box9"></div>
+      <div class="box10"></div>
+   </div>
+
+   <!-------------- №5 -----------------> <br><hr><br>
+   <div class="wrapper4">
+      <div class="box7"></div>
+      <div class="box8"></div>
+      <div class="box9"></div>
+      <div class="box11"></div>
+   </div>
+
+</body>
+
+</html>
