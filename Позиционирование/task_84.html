@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Отрицательные значения при позиционировании</title>
+
+   <style>
+      * {
+         box-sizing: border-box;
+      }
+
+      body {
+         margin: 20px 150px;
+      }
+
+      /*_____________№1_____________*/
+      .main_box {
+         width: 500px;
+         height: 300px;
+         border: 1px solid green;
+         margin: 0 auto;
+         position: relative;
+      }
+
+      .box1 {
+         border: 1px solid red;
+         width: 50px;
+         height: 50px;
+         position: absolute;
+         left: -70px;
+         top: 0;
+      }
+
+      .box2 {
+         border: 1px solid red;
+         width: 50px;
+         height: 50px;
+         position: absolute;
+         right: -70px;
+         top: 0;
+      }
+
+   </style>
+
+</head>
+
+<body>
+
+   <!-------------- №1 -----------------> <br>
+   <div class="main_box">
+      <div class="box1"></div>
+      <div class="box2"></div>
+   </div>
+
+</body>
+
+</html>
