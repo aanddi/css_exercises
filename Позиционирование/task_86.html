@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Наложение элементов по оси Z</title>
+
+   <style>
+      * {
+         box-sizing: border-box;
+      }
+
+      body {
+         margin: 20px 150px;
+      }
+
+      .box {
+         height: 50px;
+         width: 50px;
+         position: absolute;
+      }
+
+      .green-bg {
+         border: 1px solid green;
+         background-color: green;
+      }
+
+      .red-bg {
+         border: 1px solid red;
+         background-color: red;
+      }
+
+      .blue-bg {
+         border: 1px solid blue;
+         background-color: blue;
+      }
+
+
+      /*_____________№1_____________*/
+      .elem1 {
+
+         top: 53px;
+         left: 94px;
+      }
+
+      .elem2 {
+         top: 75px;
+         left: 123px;
+         z-index: 200;
+      }
+
+      .elem3 {
+         top: 103px;
+         left: 152px;
+      }
+
+      /*_____________№2_____________*/
+      .elem4 {
+         top: 219px;
+         left: 94px;
+         z-index: 300;
+      }
+
+      .elem5 {
+         top: 244px;
+         left: 121px;
+         z-index: 200;
+      }
+
+      .elem6 {
+         top: 269px;
+         left: 152px;
+         z-index: 100;
+      }
+
+      /*_____________№3_____________*/
+      .elem7 {
+         top: 385px;
+         left: 94px;
+         z-index: 300;
+      }
+
+      .elem8 {
+         top: 406px;
+         left: 121px;
+         z-index: 200;
+      }
+
+      .elem9 {
+         top: 437px;
+         left: 152px;
+         z-index: 300;
+      }
+   </style>
+
+</head>
+
+<body>
+
+   <!-------------- №1 -----------------> <br>
+
+   <div class="box red-bg elem1"></div>
+   <div class="box blue-bg elem2"></div>
+   <div class="box green-bg elem3"></div>
+
+   <!-------------- №2 -----------------> <br>
+
+   <div class="box red-bg elem4"></div>
+   <div class="box blue-bg elem5"></div>
+   <div class="box green-bg elem6"></div>
+
+   <!-------------- №3 -----------------> <br>
+
+   <div class="box red-bg elem7"></div>
+   <div class="box blue-bg elem8"></div>
+   <div class="box green-bg elem9"></div>
+
+</body>
+
+</html>
