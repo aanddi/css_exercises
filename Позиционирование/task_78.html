@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Абсолютное позиционирование элементов на CSS</title>
+
+   <style>
+      * {
+         box-sizing: border-box;
+      }
+
+      body {
+         margin: 20px 150px;
+      }
+
+      .box {
+         height: 50px;
+         width: 50px;
+      }
+
+      .green {
+         border: 1px solid green;
+      }
+
+      .red {
+         border: 1px solid red;
+      }
+
+      .blue {
+         border: 1px solid blue;
+      }
+
+
+      /*_____________№1_____________*/
+      .elem2 {
+         position: absolute;
+         top: 95px;
+         left: 213px;
+      }
+
+      .elem3 {
+         position: absolute;
+         top: 155px;
+         left: 277px;
+      }
+
+
+      /*_____________№2_____________*/
+      .elem4 {
+         position: absolute;
+         top: 300px;
+      }
+
+      .elem5 {
+         position: absolute;
+         top: 300px;
+         left: 210px;
+      }
+
+      .elem6 {
+         position: absolute;
+         top: 300px;
+         left: 271px;
+      }
+
+      /*_____________№3_____________*/
+
+      .elem7 {
+         position: absolute;
+         top: 430px;
+      }
+
+      .elem8 {
+         position: absolute;
+         top: 455px;
+         left: 172px;
+      }
+
+      .elem9 {
+         position: absolute;
+         top: 478px;
+         left: 200px;
+      }
+
+      /*_____________№4_____________*/
+      .red-bg {
+         border: 1px solid red;
+         background-color: red;
+      }
+
+      .green-bg {
+         border: 1px solid green;
+         background-color: green;
+      }
+
+      .blue-bg {
+         border: 1px solid blue;
+         background-color: blue;
+      }
+
+      .elem10 {
+         position: absolute;
+         top: 600px;
+      }
+
+      .elem11 {
+         position: absolute;
+         top: 625px;
+         left: 172px;
+      }
+
+      .elem12 {
+         position: absolute;
+         top: 657px;
+         left: 200px;
+      }
+
+
+   </style>
+
+</head>
+
+<body>
+
+   <!-------------- №1 -----------------> <br>
+
+   <div class="box red elem1"></div>
+   <div class="box blue elem2"></div>
+   <div class="box green elem3"></div>
+
+
+   <!-------------- №2 -----------------> <br>
+
+   <div class="box red elem4"></div>
+   <div class="box blue elem5"></div>
+   <div class="box green elem6"></div>
+
+   <!-------------- №3 -----------------> <br>
+
+   <div class="box red elem7"></div>
+   <div class="box blue elem8"></div>
+   <div class="box green elem9"></div>
+
+   <!-------------- №4 -----------------> <br>
+
+   <div class="box red-bg elem10"></div>
+   <div class="box blue-bg elem11"></div>
+   <div class="box green-bg elem12"></div>
+
+</body>
+
+</html>
