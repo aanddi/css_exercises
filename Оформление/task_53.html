@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Свойство-сокращение для границы на CSS</title>
+
+   <style>
+
+      body {
+         margin: 20px 150px;
+      }
+
+      body * {
+         margin: 0 auto;
+      }
+
+      /*_____________№1_____________*/
+      .box1 {
+         width: 350px;
+         height: 200px;
+         border: 1px solid red;
+      }
+
+      /*_____________№2_____________*/
+      .box2 {
+         width: 350px;
+         height: 200px;
+         border: 2px dotted blue;
+      }
+      
+      /*_____________№3_____________*/
+      .box3 {
+         width: 350px;
+         height: 200px;
+         border: 3px dashed green;
+      }
+
+      /*_____________№4_____________*/
+      .box4 {
+         width: 350px;
+         height: 200px;
+         border: 5px double orange;
+      }
+
+   </style>
+
+</head>
+
+<body>
+
+   <!-------------- №1 -----------------> <br><hr><br>
+   <div class="box1"></div>
+
+   <!-------------- №2 -----------------> <br><hr><br>
+   <div class="box2"></div>
+
+   <!-------------- №3 -----------------> <br><hr><br>
+   <div class="box3"></div>
+
+   <!-------------- №4 -----------------> <br><hr><br>
+   <div class="box4"></div>
+
+</body>
+
+</html>
