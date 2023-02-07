@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Флекс элементы на CSS</title>
+
+   <style>
+
+      * {
+         box-sizing: border-box;
+      }
+
+      body {
+         margin: 20px 150px;
+      }
+
+      .box {
+         height: 50px;
+         width: 100px;
+         border: 1px solid green;
+         padding-top: 15px;
+      }
+
+      /*_____________№1_____________*/
+      .wrapper1 {
+         width: 800px;
+         height: 500px;
+         border: 1px solid red;
+         text-align: center;
+         display: flex;
+
+      }
+
+      /*_____________№2_____________*/
+      .wrapper2 {
+         width: 800px;
+         border: 1px solid red;
+         text-align: center;
+         display: flex;
+      }
+
+      /*_____________№3_____________*/
+      .wrapper3 {
+         border: 1px solid red;
+         text-align: center;
+         display: flex;
+      }
+
+      /*_____________№4_____________*/
+      .wrapper4 {
+         border: 1px solid red;
+         text-align: center;
+         display: inline-flex;
+      }
+
+      /*_____________№5_____________*/
+      .wrapper5 {
+         border: 1px solid red;
+         text-align: center;
+         display: inline-flex;
+         padding: 40px;
+      }
+
+      /*_____________№6_____________*/
+      .wrapper6 {
+         border: 1px solid red;
+         text-align: center;
+         display: flex;
+         padding: 40px;
+      }
+
+      .box1 {
+         height: 50px;
+         width: 100px;
+         border: 1px solid green;
+         padding-top: 15px;
+         margin: 20px;
+      }
+
+   </style>
+
+</head>
+
+<body>
+
+   <!-------------- №1 -----------------> <br><hr><br>
+   <div class="wrapper1">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+   </div>
+
+   <!-------------- №2 -----------------> <br><hr><br>
+   <div class="wrapper2">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+   </div>
+
+   <!-------------- №3 -----------------> <br><hr><br>
+   <div class="wrapper3">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+   </div>
+
+   <!-------------- №4 -----------------> <br><hr><br>
+   <div class="wrapper4">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+   </div>
+
+   <!-------------- №5 -----------------> <br><hr><br>
+   <div class="wrapper5">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+   </div>
+
+   <!-------------- №6 -----------------> <br><hr><br>
+   <div class="wrapper6">
+      <div class="box1">1</div>
+      <div class="box1">2</div>
+      <div class="box1">3</div>
+      <div class="box1">4</div>
+      <div class="box1">5</div>
+   </div>
+
+</body>
+
+</html>

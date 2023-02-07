@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Выравнивание строчно-блочных элементов</title>
+
+   <style>
+      body {
+         margin: 20px 150px;
+      }
+
+      /*_____________№1_____________*/
+      .parent1  {
+         text-align: center;
+      }
+
+      .child1 {
+         display: inline-block;
+         margin: 0px 5px;
+      }
+
+      /*_____________№2_____________*/
+      .parent2 {
+	      padding: 10px 0;
+	      border: 1px solid red;
+         text-align: right;
+      }
+      .child2 {
+         padding: 10px;
+         border: 1px solid green;
+         display: inline-block;
+      }
+
+      /*_____________№3_____________*/
+      .parent3 {
+	      padding: 10px 0;
+	      border: 1px solid red;
+         text-align: right;
+         padding-right: 20px;
+      }
+      .child3 {
+         padding: 10px;
+         border: 1px solid green;
+         display: inline-block;
+      }
+
+      /*_____________№4_____________*/
+      .parent4 {
+	      padding: 10px 0;
+	      border: 1px solid red;
+         text-align: right;
+      }
+      .child4 {
+         padding: 10px;
+         border: 1px solid green;
+         display: inline-block;
+        margin-right: 20px;
+      }
+
+      /*_____________№5_____________*/
+      .parent5 {
+         padding: 10px 0;
+         border: 1px solid red;
+         text-align: right;
+      }
+      .child5 {
+         width: 100px;
+         padding: 10px;
+         border: 1px solid green;
+         display: inline-block;
+      }
+
+      /*_____________№6_____________*/
+      .parent6 {
+         padding: 10px 0;
+         border: 1px solid red;
+         text-align: right;
+      }
+      .child6 {
+         width: 100px;
+         padding: 10px;
+         border: 1px solid green;
+         display: inline-block;
+         text-align: center;
+      }
+
+   </style>
+
+</head>
+
+<body>
+
+   <!-------------- №1 -----------------> <br><hr><br>
+   <div class="parent1">
+      <div class="child1">text 1</div>
+      <div class="child1">text 2</div>
+      <div class="child1">text 3</div>
+   </div>
+ 
+   <!-------------- №2 -----------------> <br><hr><br>
+   <div class="parent2">
+      <div class="child2">text</div>
+   </div>
+
+   <!-------------- №3 -----------------> <br><hr><br>
+   <div class="parent3">
+      <div class="child3">text</div>
+   </div>
+
+   <!-------------- №4 -----------------> <br><hr><br>
+   <div class="parent4">
+      <div class="child4">text</div>
+   </div>
+
+   <!-------------- №5 -----------------> <br><hr><br>
+   <div class="parent5">
+      <a href="" class="child5">text</a>
+   </div>
+
+   <!-------------- №6 -----------------> <br><hr><br>
+   <div class="parent6">
+      <a href="" class="child6">text</a>
+   </div>
+
+
+</body>
+
+</html>

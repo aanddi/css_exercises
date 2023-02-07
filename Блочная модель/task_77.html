@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Выравнивание flex элементов</title>
+
+   <style>
+
+      * {
+         box-sizing: border-box;
+      }
+
+      body {
+         margin: 20px 150px;
+      }
+
+      .box {
+         height: 50px;
+         width: 100px;
+         border: 1px solid green;
+         padding-top: 15px;
+      }
+
+      /*_____________№1_____________*/
+      .wrapper1 {
+         width: 500px;
+         height: 300px;
+         border: 1px solid red;
+         display: flex;
+         justify-content: center;
+         text-align: center;
+
+      }
+
+      /*_____________№2_____________*/
+      .wrapper2 {
+         width: 500px;
+         height: 300px;
+         border: 1px solid red;
+         text-align: center;
+         display: flex;
+         justify-content: space-between;
+      }
+
+      /*_____________№3_____________*/
+      .wrapper3 {
+         width: 500px;
+         height: 300px;
+         border: 1px solid red;
+         text-align: center;
+         display: flex;
+         justify-content: space-around;
+      }
+
+      /*_____________№4_____________*/
+      .wrapper4 {
+         width: 500px;
+         height: 300px;
+         border: 1px solid red;
+         text-align: center;
+         display: inline-flex;
+         justify-content: space-evenly;
+      }
+
+   </style>
+
+</head>
+
+<body>
+
+   <!-------------- №1 -----------------> <br><hr><br>
+   <div class="wrapper1">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+   </div>
+
+   <!-------------- №2 -----------------> <br><hr><br>
+   <div class="wrapper2">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+   </div>
+
+   <!-------------- №3 -----------------> <br><hr><br>
+   <div class="wrapper3">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+   </div>
+
+   <!-------------- №4 -----------------> <br><hr><br>
+   <div class="wrapper4">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+   </div>
+
+</body>
+
+</html>
