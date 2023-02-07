@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Порядок flex блоков через CSS</title>
+
+   <style>
+
+      .wrapper {
+         display: flex;
+         width: 900px;
+         height: 400px;
+         margin: 20px auto;
+         border: 1px solid red;
+      }
+
+      .box {
+         width: 120px;
+         height: 60px;
+         border: 1px solid green;
+         text-align: center;
+      }
+
+      /*_____________№1_____________*/
+      .item1 {
+         justify-content: center;
+         align-items: center;
+      }
+
+      .box1 {
+         order: 2;
+
+         background-color: #be0202;
+         color: #000;
+         border: 0;
+         font-weight: bold;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+
+      .box2 {
+         order: 3;
+
+         background-color: #021fbe;
+         color: #000;
+         border: 0;
+         font-weight: bold;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+
+      .box3 {
+         order: 4;
+
+         background-color: #e907cb;
+         color: #000;
+         border: 0;
+         font-weight: bold;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+
+      .box4 {
+         order: 5;
+
+         background-color: #1bc905;
+         color: #000;
+         border: 0;
+         font-weight: bold;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+
+      .box5 {
+         order: 1;
+
+         background-color: #f8b602;
+         color: #000;
+         border: 0;
+         font-weight: bold;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+
+      /*_________________________________*/
+      .item2 {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+      }
+
+   </style>
+
+</head>
+
+<body>
+   <!-------------- №1 -----------------> <br><hr><br>
+   <div class="wrapper item1">
+      <div class="box box1">1</div>
+      <div class="box box2">2</div>
+      <div class="box box3">3</div>
+      <div class="box box4">4</div>
+      <div class="box box5">5</div>
+   </div>
+
+   <div class="wrapper item2">
+      <div class="box box1">1</div>
+      <div class="box box2">2</div>
+      <div class="box box3">3</div>
+      <div class="box box4">4</div>
+      <div class="box box5">5</div>
+   </div>
+
+</body>
+
+</html>

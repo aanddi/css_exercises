@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Выравнивание флекс блоков по поперечной оси CSS</title>
+
+   <style>
+
+      .wrapper {
+         display: flex;
+         width: 900px;
+         height: 400px;
+         margin: 20px auto;
+         border: 1px solid red;
+      }
+
+      .box {
+         width: 120px;
+         height: 60px;
+         border: 1px solid green;
+         text-align: center;
+      }
+
+      /*_____________№1_____________*/
+      .task1 {
+         flex-direction: column-reverse;
+         justify-content: flex-end;
+         align-items: end;
+      }
+
+      /*_____________№2_____________*/
+      .task2 {
+         flex-direction: row-reverse;
+         align-items: flex-end;
+
+      }
+
+      /*_____________№3_____________*/
+      .task3 {
+         flex-direction: column-reverse;
+         justify-content: flex-end;
+      }
+
+      /*_____________№4_____________*/
+      .task4 {
+         flex-direction: column-reverse;
+         justify-content: flex-start;
+         align-items: flex-end;
+      }
+
+      /*_____________№5_____________*/
+      .task5 {
+         flex-direction: row;
+         align-items: flex-end;
+      }
+
+      /*_____________№6_____________*/
+      .task6 {
+         justify-content: center;
+         flex-direction: row;
+      }
+      /*_____________№7_____________*/
+      .task7 {
+         justify-content: center;
+         align-items: end;
+         flex-direction: row;
+      }
+
+   </style>
+
+</head>
+
+<body>
+   <!-------------- №1 -----------------> <br><hr><br>
+   <div class="wrapper task1">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+   </div>
+
+   <!-------------- №2 -----------------> <br><hr><br>
+   <div class="wrapper task2">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+   </div>
+ 
+   <!-------------- №3 -----------------> <br><hr><br>
+   <div class="wrapper task3">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+   </div>
+
+   <!-------------- №4 -----------------> <br><hr><br>
+   <div class="wrapper task4">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+   </div>
+
+   <!-------------- №5 -----------------> <br><hr><br>
+   <div class="wrapper task5">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+   </div>
+
+   <!-------------- №6 -----------------> <br><hr><br>
+   <div class="wrapper task6">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+   </div>
+
+   <!-------------- №7 -----------------> <br><hr><br>
+   <div class="wrapper task7">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+   </div>
+
+</body>
+
+</html>

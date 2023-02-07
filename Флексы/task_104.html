@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Значение stretch свойства align-items</title>
+
+   <style>
+
+      .wrapper {
+         display: flex;
+         width: 900px;
+         height: 400px;
+         margin: 20px auto;
+         border: 1px solid red;
+      }
+
+      .box {
+         width: 120px;
+         border: 1px solid green;
+         text-align: center;
+      }
+
+      /*_____________№1_____________*/
+      .task1 {
+         justify-content: center;
+         align-items: stretch;
+
+      }
+
+      /*_____________№2_____________*/
+      .task2 {
+         flex-direction: column;
+         justify-content: center;
+          align-items: stretch;
+      }
+
+      .box1 {
+         height: 40px;
+         border: 1px solid green;
+      }
+
+      /*_____________№3_____________*/
+      .task3 {
+         flex-direction: column;
+         justify-content: space-between;
+         align-items: stretch;
+      }
+
+    
+
+   </style>
+
+</head>
+
+<body>
+   <!-------------- №1 -----------------> <br><hr><br>
+   <div class="wrapper task1">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+   </div>
+
+   <!-------------- №2 -----------------> <br><hr><br>
+   <div class="wrapper task2">
+      <div class="box1">1</div>
+      <div class="box1">2</div>
+      <div class="box1">3</div>
+      <div class="box1">4</div>
+      <div class="box1">5</div>
+   </div>
+ 
+   <!-------------- №3 -----------------> <br><hr><br>
+   <div class="wrapper task3">
+      <div class="box1">1</div>
+      <div class="box1">2</div>
+      <div class="box1">3</div>
+      <div class="box1">4</div>
+      <div class="box1">5</div>
+   </div>
+
+</body>
+
+</html>

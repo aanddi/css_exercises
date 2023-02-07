@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Размещение флекс элементов в ряд или колонку</title>
+
+   <style>
+      /*_____________№1_____________*/
+      .wrapper1 {
+         display: flex;
+         flex-direction: row;
+         width: 900px;
+         height: 400px;
+         margin: 20px auto;
+         border: 1px solid red;
+      }
+
+      .box {
+         width: 120px;
+         height: 60px;
+         border: 1px solid green;
+      }
+
+      /*_____________№2_____________*/
+      .wrapper2 {
+         display: flex;
+         flex-direction: column;
+         width: 900px;
+         height: 400px;
+         margin: 20px auto;
+         border: 1px solid red;
+      }
+
+      /*_____________№3_____________*/
+      .wrapper3 {
+         display: flex;
+         flex-direction: row-reverse;
+         width: 900px;
+         height: 400px;
+         margin: 20px auto;
+         border: 1px solid red;
+      }
+
+      /*_____________№4_____________*/
+      .wrapper4 {
+         display: flex;
+         flex-direction: column-reverse;
+         width: 900px;
+         height: 400px;
+         margin: 20px auto;
+         border: 1px solid red;
+      }
+
+   </style>
+
+</head>
+
+<body>
+   <!-------------- №1 -----------------> <br><hr><br>
+   <div class="wrapper1">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+   </div>
+
+
+   <!-------------- №2 -----------------> <br><hr><br>
+   <div class="wrapper2">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+   </div>
+
+   <!-------------- №3 -----------------> <br><hr><br>
+   <div class="wrapper3">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+   </div>
+
+   <!-------------- №4 -----------------> <br>
+   <div class="wrapper4">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+   </div>
+
+</body>
+
+</html>
