@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Схема макетов с несколькими врапперами</title>
+</head>
+
+<style>
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   }
+
+   body {
+      font-family: Arial;
+   }
+   .wrapper {
+      text-align: center;
+      width: 100%;
+   }
+
+   header {
+      background-color: #008040;;
+      padding: 10px;
+      color: #fff;
+   }
+
+   header > *:not(:last-child) {
+      padding-bottom: 7px;
+   }
+
+   .block {
+      width: 800px;
+      margin: 0 auto;
+      text-align: justify;
+      padding-top: 30px;
+   }
+
+   .block > *:not(:last-child), 
+   ol > *:not(:last-child), 
+   .contact > *:not(:last-child), 
+   .about > *:not(:last-child) {
+      margin-bottom: 10px;
+   }
+
+   .block__title {
+      text-align: center;
+   }
+
+   li {
+      list-style-position: inside;
+      line-height: 120%;
+   }
+
+   .contact {
+      text-align: center;
+      background-color: #C60304;;
+      padding: 15px;
+      color: #fff;
+      margin-top: 30px;
+   }
+
+   .about {
+      width: 800px;
+      margin: 0 auto;
+      text-align: justify;
+      padding-top: 30px;
+      line-height: 120%;
+   }
+
+   h2 {
+      text-align: center;
+   }
+
+   footer {
+      display: flex;
+      align-items: end;
+      justify-content: center;
+      height: 65px;
+      background-color: #FF8040;
+      color: #fff;
+      padding-bottom: 10px;
+      margin-top: 20px;
+      font-size: 14px;
+   }
+
+   
+
+</style>
+
+<body>
+   <div class="wrapper">
+      <header>
+         <h1>Любые виды ремонтных работ</h1>
+         <h3>Выезд специалиста, замер и смета работ бесплатно</h3>
+         <h3>Бесплатный дизайн проект</h3>
+         <h3>Гарантия 3 года</h3>
+      </header>
+      <div class="block">
+         <h2 class="block__title">Наши услуги</h2>
+         <ol>
+            <li>
+               Pellentesque pellentesque sem ac justo tristique pellentesque. Vestibulum semper pulvinar rutrum. Maecenas odio urna, porta sed lectus eget, fringilla posuere odio. Maecenas pulvinar sed massa vitae tincidunt.
+            </li>
+            <li>
+               Praesent ullamcorper est ac lorem aliquet, sed tempus lacus iaculis. Pellentesque a odio pharetra, sagittis enim sit amet, euismod leo. Nullam egestas, nisi eget blandit dignissim, augue dui accumsan est, at tincidunt ipsum metus quis justo. Aenean sed mauris ornare, faucibus tortor in, iaculis magna. Duis eros lectus, auctor eu mi sit amet, ornare scelerisque elit.
+            </li>
+            <li>
+               Integer a sollicitudin quam. Sed laoreet finibus velit ut rhoncus. Nunc euismod neque at ligula venenatis vestibulum. Nulla facilisi. Nunc aliquet, erat sed ullamcorper malesuada, sapien magna tempor augue, at malesuada felis enim at quam. Curabitur ornare tincidunt nisi id cursus.
+            </li>
+            <li>
+               Nunc finibus non massa in vestibulum. Etiam euismod metus ut euismod sagittis. Donec tincidunt neque a dolor posuere egestas. Proin sed dolor dui. In urna tellus, pretium in eleifend eget, pellentesque et enim. Etiam pulvinar velit nec libero iaculis, vitae consectetur elit pellentesque.
+            </li>
+         </ol>
+      </div>
+      <div class="contact">
+         <h2>Наши контакты</h2>
+         <p>Телефоны: +375 29 335 29 38 МТС, +375 31 335 29 38 Velcom</p>
+      </div>
+      <div class="about">
+         <h2>Наша компания</h2>
+         <p>
+            Pellentesque pellentesque sem ac justo tristique pellentesque. Vestibulum semper pulvinar rutrum. Maecenas odio urna, porta sed lectus eget, fringilla posuere odio. Maecenas pulvinar sed massa vitae tincidunt. Praesent ullamcorper est ac lorem aliquet, sed tempus lacus iaculis. Pellentesque a odio pharetra, sagittis enim sit amet, euismod leo. Nullam egestas, nisi eget blandit dignissim, augue dui accumsan est, at tincidunt ipsum metus quis justo. Aenean sed mauris ornare, faucibus tortor in, iaculis magna. Duis eros lectus, auctor eu mi sit amet, ornare scelerisque elit.
+         </p>
+         <p>
+            Integer a sollicitudin quam. Sed laoreet finibus velit ut rhoncus. Nunc euismod neque at ligula venenatis vestibulum. Nulla facilisi. Nunc aliquet, erat sed ullamcorper malesuada, sapien magna tempor augue, at malesuada felis enim at quam. Curabitur ornare tincidunt nisi id cursus. Nunc finibus non massa in vestibulum. Etiam euismod metus ut euismod sagittis. Donec tincidunt neque a dolor posuere egestas. Proin sed dolor dui. In urna tellus, pretium in eleifend eget, pellentesque et enim. Etiam pulvinar velit nec libero iaculis, vitae consectetur elit pellentesque.
+         </p>
+      </div>
+      <footer>
+         <p>
+            Строительная компания "Рога и копыта" © Все права более чем защищены.
+         </p>
+      </footer>
+   </div>
+</body>
+</html>
