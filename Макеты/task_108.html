@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Создание меню на CSS</title>
+
+   <style>
+
+      * {
+         box-sizing: border-box;
+      }
+
+      body {
+         font-size: 16px;
+         font-family: Arial;
+      }
+      /*_____________№1_____________*/
+      .menu_item1 {
+         display: flex;
+         justify-content: center;
+      }
+
+      .menu-list1 {
+         list-style: none;
+         margin-right: 10px;
+         font-weight: bold;
+      }
+
+      .menu-link1 {
+         text-decoration: none;
+         color: #e4e4e4;
+         background-color: #16A177;;
+         border: 1px solid #16A177;
+         padding: 10px 25px;
+         transition: all 0.4s ease-out;
+         border-radius: 10px;
+      }
+
+      .menu-link1:hover, .active  {
+         background-color: #fff;
+         border: 1px solid #16A177;
+         color: #16A177;
+      }
+
+      /*_____________№2_____________*/
+      .menu_item2 {
+         display: flex;
+         flex-direction: column;
+      }
+
+      .menu_item2 > *:not(:last-child) {
+         margin-bottom: 20px;
+      }
+
+      .menu-list2 {
+         padding: 15px 25px;
+         list-style: none;
+         font-weight: bold;
+         width: 200px;
+         background-color: #16A177;;
+         border: 1px solid #16A177;
+         color: #fff;
+      }
+
+      .menu-link2 {
+         text-decoration: none;
+         color: inherit;
+         transition: all 0.4s ease-out;
+      }
+
+      .menu-list2:hover, .active2  {
+         background-color: #fff;
+         border: 1px solid #16A177;
+         color: #16A177;
+      }
+  
+      /*_____________№3_____________*/
+      .menu_item3 {
+         display: flex;
+         justify-content: center;
+      }
+
+      .menu-list3 {
+         list-style: none;
+         background-color: #16A177;;
+         color: #fff;
+         padding: 20px;
+      }
+
+      .menu-link3 {
+         text-decoration: none;
+         color: inherit;
+         transition: all 0.4s ease-out;
+      }
+
+      .menu-list3:hover, .active3  {
+         background-color: #16785C;
+      }
+ 
+   </style>
+
+</head>
+
+<body>
+   <!-------------- №1 -----------------> <br><br>
+   <nav>
+      <ul class="menu_item1">
+         <li class="menu-list1 ">
+            <a href="#" class="menu-link1 active">Главная</a>
+         </li>
+         <li class="menu-list1">
+            <a href="#" class="menu-link1">О нас</a>
+         </li>
+         <li class="menu-list1">
+            <a href="#" class="menu-link1">Продукция</a>
+         </li>
+         <li class="menu-list1">
+            <a href="#" class="menu-link1">Галлерея</a>
+         </li>
+         <li class="menu-list1">
+            <a href="#" class="menu-link1">Контакты</a>
+         </li>
+      </ul>
+   </nav>
+
+   <!-------------- №2 -----------------> <br><br>
+   <nav>
+      <ul class="menu_item2">
+         <li class="menu-list2 ">
+            <a href="#" class="menu-link2 ">Главная</a>
+         </li>
+         <li class="menu-list2">
+            <a href="#" class="menu-link2">О нас</a>
+         </li>
+         <li class="menu-list2 active2">
+            <a href="#" class="menu-link2">Продукция</a>
+         </li>
+         <li class="menu-list2">
+            <a href="#" class="menu-link2">Галлерея</a>
+         </li>
+         <li class="menu-list2">
+            <a href="#" class="menu-link2">Контакты</a>
+         </li>
+      </ul>
+   </nav>
+
+   <!-------------- №3 -----------------> <br><br>
+   <nav>
+      <ul class="menu_item3">
+         <li class="menu-list3 ">
+            <a href="#" class="menu-link3 ">Главная</a>
+         </li>
+         <li class="menu-list3">
+            <a href="#" class="menu-link3">О нас</a>
+         </li>
+         <li class="menu-list3">
+            <a href="#" class="menu-link3">Продукция</a>
+         </li>
+         <li class="menu-list3 active3">
+            <a href="#" class="menu-link3">Галлерея</a>
+         </li>
+         <li class="menu-list3">
+            <a href="#" class="menu-link3">Контакты</a>
+         </li>
+      </ul>
+   </nav>
+
+</body>
+
+</html>
