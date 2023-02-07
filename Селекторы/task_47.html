@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Сложные селекторы с состояниями ссылок на CSS</title>
+
+   <style>
+      body {
+         margin: 20px 150px;
+      }
+
+      /*_____________№1_____________*/
+      a {
+         color: red;
+      }
+
+      a:hover {
+         text-decoration: none;
+      }
+
+      /* 
+      Выбирает все ссылки и красит в красный цвет и 
+      так же выбирает все ссылки и убирает подчеркивание при наведении на ссылку 
+      */
+
+
+      /*_____________№2_____________*/
+      a.zzz {
+         color: red;
+      }
+
+      a.zzz:hover {
+         text-decoration: none;
+      }
+
+      /* 
+      Выбирает все ссылки с классом zzz и окрашивает в красный цвет 
+      так же выбирает все ссылки с классом zzz и убирает подчеркивание при наведении на ссылку 
+      */
+
+      /*_____________№3_____________*/
+      #block a.zzz {
+         color: red;
+      }
+
+      #block a.zzz:hover {
+         text-decoration: none;
+      }
+
+      /* 
+      Выбирает все ссылки с классом zzz внутри идификатора#block и окрашивает в красный цвет
+      так же выбирает все ссылки с классом zzz внутри идификатора block и убирает подчеркивание при наведении на ссылку 
+      */
+
+      /*_____________№4_____________*/
+      .block a.zzz {
+         color: red;
+      }
+
+      .block a.zzz:hover {
+         text-decoration: none;
+      }
+
+      /* 
+      Выбирает все ссылки с классом zzz внутри класса block и окрашивает в красный цвет
+      так же выбирает все ссылки с классом zzz внутри класса block и убирает подчеркивание при наведении на ссылку 
+      */
+
+   </style>
+
+</head>
+
+<body>
+
+   <!-------------- №1 -----------------> <br><hr><br>
+   <a href="#">Link</a>
+
+   <!-------------- №2 -----------------> <br><hr><br>
+   <a href="#" class="zzz">Link</a>
+
+   <!-------------- №3 -----------------> <br><hr><br>
+   <div id="block">
+      <a href="#" class="zzz">Link</a>
+   </div>
+
+   <!-------------- №4 -----------------> <br><hr><br>
+   <div class="block">
+      <a href="#" class="zzz">Link</a>
+   </div>
+
+</body>
+</html>

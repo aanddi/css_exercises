@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Универсальный селектор в CSS</title>
+
+   <style>
+
+      body {
+         margin: 20px 150px;
+      }
+
+      /*_____________№1_____________*/
+      main * p {
+         color: #d105ec;
+      }
+
+   </style>
+
+</head>
+
+<body>
+
+   <!-------------- №1 -----------------> <br><hr><br>
+   <main>
+      <p>не выберет</p>
+      <p>не выберет</p>
+      
+      <div>
+         <p>выберет</p>
+         <p>выберет</p>
+      </div>
+      <section>
+         <p>выберет</p>
+         <p>выберет</p>
+      </section>
+   </main>
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Выборка по позиции и типу элементов на CSS</title>
+
+   <style>
+
+      body {
+         margin: 20px 150px;
+      }
+
+      /*_____________№1_____________*/
+      p:first-of-type {
+	      color: #ec0404;
+      }
+
+      p:last-of-type {
+	      color: #ec0404;
+      }
+
+      /*_____________№2_____________*/
+      h2:nth-of-type(2) {
+	      color: #ff00bf;
+      } 
+      
+      h2:nth-last-of-type(1) {
+         color: #ff00bf;
+      } 
+
+      /*_____________№3_____________*/
+      h3:only-of-type {
+         color: #3700ff;
+      }
+
+   </style>
+
+</head>
+
+<body>
+
+   <!-------------- №1 -----------------> <br><hr><br>
+   <div>
+      <h2>заголовок</h2>
+      <p>абзац</p>
+      
+      <h2>заголовок</h2>
+      <p>абзац</p>
+      
+      <h2>заголовок</h2>
+      <p>абзац</p>
+   </div>
+
+   <!-------------- №2 -----------------> <br><hr><br>
+   <div>
+      <h2>заголовок</h2>
+      <p>абзац</p>
+      
+      <h2>заголовок</h2>
+      <p>абзац</p>
+      
+      <h2>заголовок</h2>
+      <p>абзац</p>
+   </div>
+
+   <!-------------- №3 -----------------> <br><hr><br>
+   <div>
+      <h3>заголовок</h3>
+      <p>абзац</p>
+      <p>абзац</p>
+      <p>абзац</p>
+   </div>
+
+</body>
+
+</html>

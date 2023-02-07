@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Сложные селекторы с состояниями ссылок на CSS</title>
+
+   <style>
+      body {
+         margin: 20px 150px;
+      }
+
+      /*_____________№1_____________*/
+      .ul-first .li-first:first-child {
+         color: #d10303;
+      }
+
+      /*_____________№2_____________*/
+      .ul-second .li-second:last-child {
+         color: #3c9203;
+      }
+
+      /*_____________№3_____________*/
+      .ul-third .li-third:first-child {
+         color: #d10303;
+      }
+
+      .ul-third .li-third:last-child {
+         color: #3c9203;
+      }
+
+      /*_____________№4_____________*/
+      .ul-fourth .li-fourth:nth-child(3) {
+         color: #d10303;
+      }
+
+      /*_____________№5_____________*/
+      .ul-fifth .li-fifth:nth-child(2n+1) {
+         color: #d10303;
+      }
+
+      .ul-fifth .li-fifth:nth-child(2n) {
+         color: #3c9203;
+      }
+
+      /*_____________№6_____________*/
+      .ul-sixth .li-sixth:nth-child(3n) {
+         color: #d10303;
+      }
+
+      /*_____________№7_____________*/
+      .ul-seventh .li-seventh:nth-last-child(2) {
+         color: #d10303;
+      }
+
+      /*_____________№8_____________*/
+      .ul-eighth .li-eighth:only-child {
+         color: #d10303;
+      }
+
+      /*_____________№9_____________*/
+      .ul-ninth .li-ninth {
+         border: 1px solid #d10303;
+         width: 70px;
+         text-align: center;
+         margin: 12px;
+      }
+
+      .ul-ninth .li-ninth:empty {
+         border: 1px solid #0322d1;
+      }
+    
+
+   </style>
+
+</head>
+
+<body>
+
+   <!-------------- №1 -----------------> <br><hr><br>
+   <ul class="ul-first">
+      <li class="li-first">1</li>
+      <li class="li-first">2</li>
+      <li class="li-first">3</li>
+      <li class="li-first">4</li>
+      <li class="li-first">5</li>
+   </ul>
+
+   <ul class="ul-first">
+      <li class="li-first">1</li>
+      <li class="li-first">2</li>
+      <li class="li-first">3</li>
+      <li class="li-first">4</li>
+      <li class="li-first">5</li>
+   </ul>
+
+   <!-------------- №2 -----------------> <br><hr><br>
+   <ul class="ul-second">
+      <li class="li-second">1</li>
+      <li class="li-second">2</li>
+      <li class="li-second">3</li>
+      <li class="li-second">4</li>
+      <li class="li-second">5</li>
+   </ul>
+
+   <ul class="ul-second">
+      <li class="li-second">1</li>
+      <li class="li-second">2</li>
+      <li class="li-second">3</li>
+      <li class="li-second">4</li>
+      <li class="li-second">5</li>
+   </ul>
+
+   <!-------------- №3 -----------------> <br><hr><br>
+   <ul class="ul-third">
+      <li class="li-third">1</li>
+      <li class="li-third">2</li>
+      <li class="li-third">3</li>
+      <li class="li-third">4</li>
+      <li class="li-third">5</li>
+   </ul>
+
+   <ul class="ul-third">
+      <li class="li-third">1</li>
+      <li class="li-third">2</li>
+      <li class="li-third">3</li>
+      <li class="li-third">4</li>
+      <li class="li-third">5</li>
+   </ul>
+
+   <!-------------- №4 -----------------> <br><hr><br>
+   <ul class="ul-fourth">
+      <li class="li-fourth">1</li>
+      <li class="li-fourth">2</li>
+      <li class="li-fourth">3</li>
+      <li class="li-fourth">4</li>
+      <li class="li-fourth">5</li>
+      <li class="li-fourth">6</li>
+      <li class="li-fourth">7</li>
+      <li class="li-fourth">8</li>
+      <li class="li-fourth">9</li>
+   </ul>
+
+   <ul class="ul-fourth">
+      <li class="li-fourth">1</li>
+      <li class="li-fourth">2</li>
+      <li class="li-fourth">3</li>
+      <li class="li-fourth">4</li>
+      <li class="li-fourth">5</li>
+      <li class="li-fourth">6</li>
+      <li class="li-fourth">7</li>
+      <li class="li-fourth">8</li>
+      <li class="li-fourth">9</li>
+   </ul>
+
+   <!-------------- №5 -----------------> <br><hr><br>
+   <ul class="ul-fifth">
+      <li class="li-fifth">1</li>
+      <li class="li-fifth">2</li>
+      <li class="li-fifth">3</li>
+      <li class="li-fifth">4</li>
+      <li class="li-fifth">5</li>
+      <li class="li-fifth">6</li>
+      <li class="li-fifth">7</li>
+      <li class="li-fifth">8</li>
+      <li class="li-fifth">9</li>
+   </ul>
+
+   <ul class="ul-fifth">
+      <li class="li-fifth">1</li>
+      <li class="li-fifth">2</li>
+      <li class="li-fifth">3</li>
+      <li class="li-fifth">4</li>
+      <li class="li-fifth">5</li>
+      <li class="li-fifth">6</li>
+      <li class="li-fifth">7</li>
+      <li class="li-fifth">8</li>
+      <li class="li-fifth">9</li>
+   </ul>
+
+   <!-------------- №6 -----------------> <br><hr><br>
+   <ul class="ul-sixth">
+      <li class="li-sixth">1</li>
+      <li class="li-sixth">2</li>
+      <li class="li-sixth">3</li>
+      <li class="li-sixth">4</li>
+      <li class="li-sixth">5</li>
+      <li class="li-sixth">6</li>
+      <li class="li-sixth">7</li>
+      <li class="li-sixth">8</li>
+      <li class="li-sixth">9</li>
+   </ul>
+
+   <ul class="ul-sixth">
+      <li class="li-sixth">1</li>
+      <li class="li-sixth">2</li>
+      <li class="li-sixth">3</li>
+      <li class="li-sixth">4</li>
+      <li class="li-sixth">5</li>
+      <li class="li-sixth">6</li>
+      <li class="li-sixth">7</li>
+      <li class="li-sixth">8</li>
+      <li class="li-sixth">9</li>
+   </ul>
+
+   <!-------------- №7 -----------------> <br><hr><br>
+   <ul class="ul-seventh">
+      <li class="li-seventh">1</li>
+      <li class="li-seventh">2</li>
+      <li class="li-seventh">3</li>
+      <li class="li-seventh">4</li>
+      <li class="li-seventh">5</li>
+   </ul>
+
+   <ul class="ul-seventh">
+      <li class="li-seventh">1</li>
+      <li class="li-seventh">2</li>
+      <li class="li-seventh">3</li>
+      <li class="li-seventh">4</li>
+      <li class="li-seventh">5</li>
+   </ul>
+
+   <!-------------- №8 -----------------> <br><hr><br>
+   <ul class="ul-eighth">
+      <li class="li-eighth">1</li>
+      <li class="li-eighth">2</li>
+      <li class="li-eighth">3</li>
+      <li class="li-eighth">4</li>
+      <li class="li-eighth">5</li>
+   </ul>
+
+   <ul class="ul-eighth">
+      <li class="li-eighth">1</li>
+      <li class="li-eighth">2</li>
+      <li class="li-eighth">3</li>
+      <li class="li-eighth">4</li>
+      <li class="li-eighth">5</li>
+   </ul>
+
+   <!-------------- №9 -----------------> <br><hr><br>
+   <ul class="ul-ninth">
+      <li class="li-ninth">1</li>
+      <li class="li-ninth">2</li>
+      <li class="li-ninth">3</li>
+      <li class="li-ninth"></li>
+   </ul>
+
+   <ul class="ul-ninth">
+      <li class="li-ninth">1</li>
+      <li class="li-ninth">2</li>
+      <li class="li-ninth">3</li>
+      <li class="li-ninth"></li>
+   </ul>
+
+</body>
+</html>
